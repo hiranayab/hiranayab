@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    #img{
+  height: 10vh;
+    }
+    #carouselExampleSlidesOnly img {
+    height: 80vh;
+    object-fit: cover;
+}
+    .carousel-caption {
+  position: relative; /* Position context for child elements */
+}
+
+/* Ensure the image fits the container properly */
+.pic {
+  width: 100%;
+  height: 50vh; /* Adjust as per your design needs */
+  object-fit: cover;
+}
+
+/* Ensures the text overlay is properly positioned */
+.text-overlay {
+  position: absolute;
+  bottom: 20px; /* Keeps the text at the bottom */
+  left: 20px; /* Aligns text to the left */
+  color: white;
+}
+
+/* Specific positioning for text elements */
+.text-overlay h4,
+.text-overlay h6,
+.text-overlay a {
+  position: relative; /* Removes absolute positioning */
+  color: black;
+  top: -110px;
+}
+
+/* Button or Link within the overlay */
+.text-overlay a {
+  position: relative;
+  font-weight: bold;
+}
+
+.text-overlay a:hover {
+  color: #ffc107; /* Change color on hover */
+}
+
+/* Styling for carousel images */
+#picture img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+/* Ensure the card image fits its container */
+.card-img {
+  height: 450px;
+  object-fit: cover;
+}
+
+/* Adds a dark overlay to the card image */
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the card title */
+.card-title {
+  margin-bottom: 10px;
+}
+
+/* Ensures proper positioning and display for image containers */
+.image-container {
+  position: relative; /* Necessary for absolute positioning of overlay */
+  display: inline-block; /* Ensures proper wrapping */
+  width: 100%; /* Adjust if you need columns */
+  height: 50vh; /* Adjust as needed for consistency */
+}
+
+/* If using Flexbox to display images side by side */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%; /* Adjust as per design */
+  padding: 10px;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+#pics {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover; /* Ensures the image fits nicely */
+}
+ #source {
+  width: 70%;
+  height: 50vh;
+  object-fit: cover; /* Ensures the image fits nicely */
+}
+.position-relative {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 60px; /* Adjust this value to move the text upward */
+  left: 20px;
+  color: white;
+}
+.text-overlay h4, 
+.text-overlay h6, 
+.text-overlay a {
+  position: relative;
+  color: white; /* Change the color of h4, h6, and a tags */
+  margin: 0; /* Remove any unwanted margins */
+}
+.text-overlay h6 {
+  top: -110px;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.text-overlay h5 {
+  margin: 5px 0 0 0; /* Space between h6 and h5 */
+  font-size: 24px; /* Adjust font size as needed */
+}
+#para{
+  top: -10px;
+}
+#div{
+  width: 100%;
+  height: 50vh;
+}
+#class{
+            background-color: black;
+            height: 95vh;
+        }
+        #log{
+          width: 40%;
+        }
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img id="img" src="pics/logo.svg" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Industres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Partner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Press Center</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Hytera</a>
+              </li>
+              
+          </ul>
+        </div>
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav>
+        <button class="btn btn-success rounded-pill">Contact Hytera</button>
+      </nav>
+   <div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" data-interval="2000">
+          <div class="carousel-item active">
+            <img src="pics/pic1.webp" class="d-block w-100" alt="...">
+            <div class="text-overlay">
+              <button class="btn btn-success rounded-pill">Learn More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pics/pic2.webp" class="d-block w-100" alt="...">
+            <div class="text-overlay text-grey">
+               <h2>Join Our Partner Program</h2>
+              <button class="btn btn-success rounded-pill">Learn More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pics/pic3.webp" class="d-block w-100" alt="...">
+            <div class="text-overlay">
+              <h2 class="text-white">Bussiness two ways Radio</h2>
+              <button class="btn btn-success rounded-pill">Explore S Series</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pics/pic4.webp" class="d-block w-100" alt="...">
+            <div class="text-overlay ">
+               
+                <h2 class="text-white">Hytera lightup Burj Khalifa to celebrate <br> 10 Aniversary of <b>subsadiary in UAE</b></h2>
+              <button class="btn btn-success rounded-pill">Read More</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pics/pic5.webp" class="d-block w-100" alt="...">
+            <div class="text-overlay">
+                <h2 class="text-white">New Smart <br>Body Ideas</h2>
+              <button class="btn btn-success rounded-pill">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-3" id="pics">
+        <div class="row">
+          <div class="col-6 image-container">
+            <img id="pic" src="pics/pic6.jpg" alt="">
+            <div class="text-overlay safe">
+              <h4>PT890Ex</h4>
+              <h6>Intrinsically Safe TETRA Portable Radio</h6>
+              <a href="">Learn More></a>
+            </div>
+          </div>
+          <div class="col-6 image-container">
+            <img id="pic" src="pics/pic7.jpg" alt="">
+            <div class="text-overlay">
+              <h4>SC780</h4>
+              <h6>Smart $G Body Camera</h6>
+              <a href="">Learn More></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Explore Hytera Industry Solutions</h2>
+        <div class="row mt-5">
+          <!-- Column 1 -->
+          <div class="col">
+            <div class="card text-white">
+              <img src="pics/pic8.webp" class="card-img" alt="Public Safety">
+              <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                <i class="fa-solid fa-helmet-safety"></i> <!-- Example icon -->
+                <h5 class="card-title text-center">Public Safety</h5>
+                <a href="#" class="learn-more-link">Learn More</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col">
+            <div class="card text-white">
+              <img src="pics/pic9.webp" class="card-img" alt="Fire and Emergency">
+              <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                <i class="fa-solid fa-shield"></i> <!-- Example icon -->
+                <h5 class="card-title text-center">Fire and Emergency</h5>
+                <a href="#" class="learn-more-link">Learn More</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 -->
+          <div class="col">
+            <div class="card text-white">
+              <img src="pics/pic10.jpg" class="card-img" alt="Oil and Gas">
+              <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                <i class="fa-solid fa-gas-pump"></i> <!-- Example icon -->
+                <h5 class="card-title text-center">Oil and Gas</h5>
+                <a href="#" class="learn-more-link">Learn More</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- Column 4 -->
+          <div class="col">
+            <div class="card text-white">
+              <img src="pics/pic11.jpg" class="card-img" alt="Business and Enterprise">
+              <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                <i class="fa-regular fa-building"></i> <!-- Example icon -->
+                <h5 class="card-title text-center">Business and Enterprise</h5>
+                <a href="#" class="learn-more-link">Learn More</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container mt-5 text-center">
+      <h2>What's New At Hytera</h2>
+    </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-6 image-container">
+        <img src="pics/pic12.webp" id="pics" alt="Image">
+        <div class="text-overlay">
+          <h4>Event</h4>
+          <h6>INNOVATE for a Safer World</h6>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    
+      <div class="col-6 image-container">
+        <img src="pics/pic13.webp" id="source" alt="Image">
+        <div class="text-overlay">
+          <h4>News</h4>
+          <h6>Hytera Brazil Wings Awards 2024 <br>Recognize Partner Excellence</h6>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+<img id="div" src="pics/pic16.webp" alt="">
+<div class="text-overlay">
+  <p class="text-success">News</p>
+  <p class="text-dark "><b>Hytera Showcase Cutting-Edge <br> Unified Communications Solution at <br> AfricaCom 2024</b></p>
+  <a href="" class="text-dark"><b>Learn More></b></a>
+</div>
+        </div>
+        <div class="col-4">
+<img id="div" src="pics/pic15.webp" alt="">
+<div class="text-overlay">
+  <p id="para" class="text-success">News</p>
+  <p  class="text-dark" ><b>Indonesian Mine Adopt Hytera <br> DMR XPT System </b></p>
+  <a href="" class="text-dark"><b>Learn More></b></a>
+</div>
+        </div>
+        <div class="col-4">
+<img id="div" src="pics/pic16.webp" alt="">
+<div class="text-overlay">
+  <p class="text-success">Exhbition</p>
+  <p id="para" class="text-dark"><b>Hytera Global Exhbition in 2024 </b><p>
+  <a href="" class="text-dark more"><b>Learn More></b></a>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class=" container jumbotron">
+      <h2 class="text-center">Hytera,a leading global provider of <br>Professional Cmmunications Technologies and Solutions </h2>
+      <div class=" row text-center">
+        <div class="col-4"></div>
+      <div class=" col-4">
+      <a href="">Discover our portfolio></a>
+    </div>
+    
+    <div class="col-4">
+      <a href="" >Find a dealers></a>
+    </div>
+      <div class="container-fluid mt-5">
+      </div>
+          <div class="row">
+              <div class="col-4">
+                  <h1 class="display-6 text-success"><b>5,000+</b></h1>
+                  <h3>Partners</h3>
+              </div>
+      
+      <div class="col-4">
+          <h1 class="display-6 text-success" ><b>18,000,000+</b></h1>
+          <h3>Idustry Users</h3>
+      </div>
+      
+      <div class="col-4">
+          <h1 class="display-6 text-success"><b>20+</b></h1>
+          <h3>Nationwide Networks</h3>
+      </div>
+  </div>
+  </div>
+</div>
+  </div>
+  <div id="class">
+    <img id="img" class="mt-5 ml-5" src="pics/logo.svg" alt="">
+    <button style="float: right; height: 5vh;" class="btn btn-success mt-5">Subscribe</button>
+<input class="mt-5" type="email" placeholder="Your Email Address" style="float: right; height: 5vh; width: 20%;">
+<div class="row mt-5 text-white ">
+<div class="col-2 ">
+<p><b>About Hytera</b></p>
+<p>Hytera Profile</p>
+<p>Hytera CSR</p>
+<p> Hytera Offices</p>
+</div>
+<div class="col-2 ">
+<p><b>Press Center</b></p>
+<p>News</p>
+<p>Blogs</p>
+<p>Events</p>
+</div>
+<div class="col-2">
+<p><b>Partners</b></p>
+<p>Find a Dealer</p>
+<p>Become a Hytera Partner</p>
+<p>Partner Portals</p>
+</div>
+<div class="col-2">
+<p><b>Support</b></p>
+<p>Find Service Center</p>
+<p>Service Products</p>
+<p>Service Solutions</p>
+<p>Training Courses</p>
+<p>Declaration Documents</p>
+<p>Webnar Replay</p>
+</div>
+ <div class=" col-4 text-center text-white">
+  <p><b>Follow Us:</b></p>
+  <div style="font-size: 20px; ">
+    <i class="fa-brands fa-facebook-f" style="margin-right: 15px;"></i>
+    <i class="fa-brands fa-youtube" style="margin-right: 15px;"></i>
+    <i class="fa-brands fa-instagram" style="margin-right: 15px;"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+  </div>
+  <div class="col-2">
+    <p>Hytera Subsidiary Brands</p>
+  </div>
+    <div class="col-2">
+      <img id="log" src="pics/pic17.webp" alt="">
+    </div>
+    <div class="col-2">
+      <img id="log" src="pics/pic18.svg" alt="">
+    </div>
+    <div class="col-2">
+      <img id="log" src="pics/pic19.svg" alt="">
+    </div>
+    <div class="col-2">
+      <img id="log" src="pics/pic20.svg" alt="">
+    </div>
+    <div class="col-2">
+      <img id="log" src="pics/pic21.svg" alt="">
+  </div>
+  <div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
